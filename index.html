@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMoraes Portfolio</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/extends.css">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="navbar__content max-width mb-0">
+            <a href="#">
+                <img style="width: 100px; padding: 3px;" src="assets/logo.svg" alt="Agnaldo D Moraes">
+            </a>
+            <ul class="navbar__links">
+                <li><a href="#header">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skill">Habilidade</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#footer">Contatos</a></li>
+            </ul>
+            <!-- Botão alternar tema -->
+            <button id="theme-toggle" class="theme-toggle" title="Mudar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+
+            <div class="navbar__mobile">
+                <img src="assets/menu-bar.svg" alt="menu" class="burguer">
+                <ul class="mobile__links">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skill">Habilidade</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#footer">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Fim Navbar-->
+
+    <!--Header-->
+    <header id="header" class="max-width">
+        <div class="header_left">
+            <h1>Ola! Sou Agnaldo Analista de Suporte</h1>
+            <p>
+                Sou Analista de Suporte com experiência em atendimento técnico, resolução de problemas e manutenção de
+                sistemas, garantindo o bom funcionamento das operações e a satisfação do usuário. Tenho habilidade para
+                diagnosticar e solucionar incidentes, configurar softwares, orientar usuários e acompanhar chamados até
+                sua resolução.
+            </p>
+            <a href="#about" class="btn btn-primary btn-sm">Saiba Mais!</a>
+            <a href="curriculo.html" class="btn btn-success btn-sm" target="_blank">Gerar CV</a>
+        </div>
+
+        <div class="header_rigth">
+            <div class="header__image">
+                <img src="assets/analista.svg" alt="Agnaldo D Moraes" class="lucas">
+                <img src="assets/abstract.svg" alt="Agnaldo D Moraes" class="lucas">
+            </div>
+        </div>
+    </header>
+    <!--Fim Header-->
+
+    <!--Sobre-->
+    <section id="about" class="about max-width">
+        <div class="about_left">
+            <h2 class="secondary-title">Muito além do suporte: conexão entre pessoas e tecnologia</h2>
+            <p>Que tal se conectar comigo nas redes sociais abaixo e saber mais sobre meu trabalho</p>
+            <ul class="mb-1">
+                <li>
+                    <a href="#" class="openModal" data-title="Instagram"
+                        data-desc="No Instagram compartilho conteúdos técnicos, atualizações sobre projetos e experiências do dia a dia na área de tecnologia.">
+                        <img src="assets/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="openModal" data-title="LinkedIn"
+                        data-desc="No LinkedIn mantenho meu perfil profissional com experiências, certificações e conexões na área de suporte e TI.">
+                        <img src="assets/linkedin.svg" alt="Linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="openModal" data-title="Facebook"
+                        data-desc="No Facebook compartilho conteúdos sobre projetos pessoais, tecnologia e atualizações da minha trajetória profissional.">
+                        <img src="assets/facebook.svg" alt="Facebook">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="about_rigth">
+            <h3 class="tertiary-title mb-m">
+                Analista de Suporte apaixonado por tecnologias e solucoes inteligentes
+            </h3>
+            <p>
+                Sou Agnaldo, Analista de Suporte com olhar humano e mente inquieta por soluções. Minha paixão por
+                tecnologia vai além de máquinas e sistemas — ela vive na curiosidade por entender o problema, na escuta
+                ativa com o usuário e na vontade constante de melhorar processos.
+
+                Nos bastidores de cada atendimento, estou ali: traduzindo o “tecniquês”, descomplicando o que parece
+                complicado e buscando não só resolver, mas antecipar dores. Tenho conecimento com redes,
+                sistemas, softwares e manutenção, mas o que me diferencia é a forma como aplico esse conhecimento: com
+                empatia, agilidade e foco em entregar valor real para quem está do outro lado da tela.
+            </p>
+            <p>
+                Se o suporte é o elo entre o usuário e a tecnologia, meu papel é garantir que essa ponte seja segura,
+                fluida e confiável.
+            </p>
+        </div>
+    </section>
+    <!--Fim Sobre-->
+
+    <!--Habilidades-->
+    <section id="skill" class="skills">
+        <div class="skills__content max-width">
+            <h2>Minha caixa ferramentas</h2>
+            <p class="description">
+                Descubra as habilidades e as ferramentas que uso e que me permitem
+                criar solucoes criativas e funcionais para meus clientes.
+            </p>
+            <ul>
+                <li class="skills_item">
+                    <div class="image-container">
+                        <img src="assets/linuxserver.png" alt="Linux Server Debian">
+                    </div>
+                    <h3>Servidor Arquivo</h3>
+                    <p>Também possuo experiência na configuração de servidores de arquivos em ambiente Linux, integrando
+                        com Active Directory para controle de permissões e acessos. Essa vivência complementa minha
+                        atuação em suporte técnico e infraestrutura, contribuindo para ambientes mais organizados e
+                        seguros.</p>
+                </li>
+                <li class="skills_item">
+                    <div class="image-container">
+                        <img src="assets/srvubuntu.png" alt="WEB Server">
+                    </div>
+                    <h3>Servidor Web</h3>
+                    <p>Além do suporte técnico, também tenho ampliado minha atuação com desenvolvimento Full Stack,
+                        bancos de dados (MySQL e PostgreSQL) e servidores web — aprendendo na prática como integrar e
+                        manter ambientes eficientes, seguros e funcionais</p>
+                </li>
+                <li class="skills_item">
+                    <div class="image-container">
+                        <img src="assets/mysql.png" alt="DB MYSQL">
+                    </div>
+                    <h3>Data Base Mysql</h3>
+                    <p>Conhecimento em bancos de dados relacionais, com foco em MySQL e PostgreSQL. Apesar da
+                        experiência ainda em construção, já aplico comandos, consultas e rotinas básicas em contextos
+                        reais e de aprendizado contínuo.</p>
+                </li>
+                <li class="skills_item">
+                    <div class="image-container">
+                        <img src="assets/php.png" alt="Sistemas WEB">
+                    </div>
+                    <h3>Desenvolvimento WEB</h3>
+                    <p>Embora minha experiência principal esteja no suporte técnico, também venho me dedicando ao
+                        desenvolvimento Full Stack, explorando tecnologias modernas e participando de projetos que
+                        ampliam minha visão técnica.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--Fim Habilidades-->
+
+    <!--Projetos-->
+    <section id="projects" class="projects max-width">
+        <div class="projects__content">
+            <h2 class="secondary-title">Projetos em Destaque</h2>
+            <p>
+                De ideias abstratas a projetos bem sucedidos, aqui estao alguns dos meus trabalhos mais recentes.
+            </p>
+        </div>
+        <ul>
+            <li>
+                <div class="image">
+                    <img src="assets/srvdebiantools.png" alt="Gerenciamento de Tarefas" />
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Server Arquivo com AD</h3>
+                    <p>
+                        Participei da implantação de um servidor de arquivos em ambiente Linux, com integração ao Active
+                        Directory, focado em organização, segurança e controle de acesso para equipes administrativas.
+                    </p>
+                    <a href="#" class="openModal" data-title="Servidor Arquivos"
+                        data-desc="Implantação de um servidor de arquivos em ambiente Linux, com integração ao Active Directory para controle centralizado de permissões e acessos. O projeto teve como foco a organização de diretórios por setor, segurança dos dados e facilidade de acesso para os usuários da rede corporativa.">Leia
+                        mais &rarr; Servidor AD</a>
+                </div>
+            </li>
+
+            <li class="projects__reversed-list">
+                <div class="image">
+                    <img src="assets/LAMP.png" alt="ecommerce" />
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Server WEB - Apache / Mysql</h3>
+                    <p>
+                        Desenvolvimento e implantação de um sistema web para uma empresa do setor administrativo, com
+                        funcionalidades de cadastro de tarefas e atribuições de responsabilidades. O sistema foi
+                        configurado e hospedado em servidor web próprio, com foco em estabilidade, segurança e acesso
+                        interno eficiente.
+                    </p>
+                    <a href="#" class="openModal" data-title="Sistema Web"
+                        data-desc="Desenvolvimento de um sistema web voltado à gestão de tarefas internas de uma empresa administrativa. A solução permite o cadastro de tarefas, atribuição de responsáveis, definição de prazos e acompanhamento do status. O sistema foi implantado em servidor próprio e otimizado para acesso interno.">Leia
+                        mais &rarr; Servidor Web</a>
+                </div>
+            </li>
+
+            <li>
+                <div class="image">
+                    <img src="assets/vpn2.png" alt="Delivery" />
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Servidor VPN</h3>
+                    <p>
+                        Implantação de solução VPN para acesso remoto seguro aos recursos da empresa, permitindo que
+                        colaboradores conectem-se à rede interna com segurança, mesmo fora do ambiente físico.
+                        Configuração realizada em ambiente Linux, com controle de autenticação e integração ao servidor
+                        de arquivos.
+                    </p>
+                    <a href="#" class="openModal" data-title="VPN"
+                        data-desc="Criação de uma rede VPN utilizando Linux, permitindo que colaboradores acessem a rede interna da empresa com segurança fora do ambiente físico. A configuração inclui autenticação de usuários e integração com recursos como servidor de arquivos e sistemas internos.">Leia
+                        mais &rarr; Servidor VPN</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--Fechar Projetos-->
+
+    <div class="carousel-wrapper">
+        <section id="tech-carousel-section">
+            <div class="carousel">
+                <i class="fab fa-html5 icon" title="HTML5"></i>
+                <i class="fab fa-css3-alt icon" title="CSS3"></i>
+                <i class="fab fa-js icon" title="JavaScript"></i>
+                <i class="fas fa-database icon" title="MySQL"></i>
+                <i class="fab fa-linux icon" title="Linux"></i>
+                <i class="fab fa-php icon" title="PHP"></i>
+                <i class="fas fa-database icon" title="SQL"></i>
+                <i class="fab fa-windows icon" title="Windows"></i>
+            </div>
+        </section>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer">
+        <div class="footer__content max-width mb-0">
+            <h2 class="tertiary-title mb-s">Vamos conversar?</h2>
+            <p class="mb-m">
+                Ficarei feliz em saber mais sobre seus projetos e como podemos
+                trabalhar juntos para torna-lo realidade.
+            </p>
+            <div class="footer__contact mb-m">
+                <span class="mb-m">adguina@gmail.com</span>
+                <span> 11-972164906</span>
+            </div>
+            <ul class="mb-1">
+                <li>
+                    <a href="#" class="openModal" data-title="Instagram"
+                        data-desc="No Instagram compartilho conteúdos técnicos, atualizações sobre projetos e experiências do dia a dia na área de tecnologia.">
+                        <img src="assets/instagram.svg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="openModal" data-title="LinkedIn"
+                        data-desc="No LinkedIn mantenho meu perfil profissional com experiências, certificações e conexões na área de suporte e TI.">
+                        <img src="assets/linkedin.svg" alt="Linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="openModal" data-title="Facebook"
+                        data-desc="No Facebook compartilho conteúdos sobre projetos pessoais, tecnologia e atualizações da minha trajetória profissional.">
+                        <img src="assets/facebook.svg" alt="Facebook">
+                    </a>
+                </li>
+            </ul>
+
+            <p class="footer__copyrigth">
+                © 2023 Agnaldo D Moraes. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+    <!--Fechar Footer-->
+
+    <!--Botão WhatsApp-->
+    <a href="https://wa.me/5511972164906" class="whatsapp-float" target="_blank" title="Fale Agnaldo no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!--Scripts-->
+    <script src="scripts/index.js"></script>
+
+    <!-- Modal AD Linux -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2 id="modalTitle">Título do Projeto</h2>
+            <p id="modalDesc">Descrição do projeto...</p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('modal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDesc = document.getElementById('modalDesc');
+        const closeModalBtn = document.getElementById('closeModal');
+
+        // Seleciona todos os links que abrem modal
+        const modalLinks = document.querySelectorAll('.openModal');
+
+        modalLinks.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                // Atualiza título e descrição do modal com os dados do link clicado
+                modalTitle.textContent = this.getAttribute('data-title');
+                modalDesc.textContent = this.getAttribute('data-desc');
+                modal.style.display = 'block';
+            });
+        });
+
+        // Fecha o modal ao clicar no "x"
+        closeModalBtn.addEventListener('click', function () {
+            modal.style.display = 'none';
+        });
+
+        // Fecha o modal ao clicar fora do conteúdo
+        window.addEventListener('click', function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+    <!-- Fim Modal AD Linux -->
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+#tech-carousel-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    /* altura do container para centralizar verticalmente */
+    width: 100%;
+    margin: 0 auto;
+}
+
+#tech-carousel-section {
+    width: 100vw !important;
+    height: 320px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.carousel {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    animation: spin 20s linear infinite;
+}
+
+.carousel .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    color: var(--dourado-texto);
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 150px;
+    /* aqui vai mudar via JS */
+    transition: color 0.3s ease;
+}
+
+.carousel .icon:hover {
+    color: #fff;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.carousel .icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    line-height: 50px;
+    /* para centralizar verticalmente */
+    text-align: center;
+    /* para centralizar horizontalmente */
+    color: var(--dourado-texto);
+    top: 40%;
+    left: 50%;
+    transform-origin: 0 150px;
+    transition: color 0.3s ease;
+}
+
+.carousel .icon:hover {
+    color: #fff;
+}
+
+.fa-windows {
+    transform: scale(0.85);
+    display: inline-block;
+}

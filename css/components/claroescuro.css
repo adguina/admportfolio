@@ -1,0 +1,100 @@
+/* Botão de tema compacto */
+.theme-toggle {
+    background: none;
+    border: none;
+    padding: 6px 8px;
+    font-size: 18px;
+    cursor: pointer;
+    color: inherit;
+}
+
+.theme-toggle:hover {
+    opacity: 0.8;
+}
+
+.theme-toggle {
+    font-size: 32px;
+}
+
+/* Tema claro */
+body.light-theme {
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+/* Navbar clara */
+body.light-theme .navbar {
+    background-color: #ffffff;
+    color: #222;
+}
+
+/* Links no tema claro */
+body.light-theme .navbar a {
+    color: #222;
+}
+
+body.light-theme .navbar a:hover {
+    color: #007bff;
+}
+
+
+
+/* Forçar cores no tema claro */
+body.light-theme,
+body.light-theme * {
+    color: #222 !important;
+}
+
+/* Fundo claro no body */
+body.light-theme {
+    background-color: #87cefa !important;
+}
+
+/* Navbar clara */
+body.light-theme .navbar {
+    background-color: #add8e6 !important;
+}
+
+/* Links no tema claro */
+body.light-theme a {
+    color: #222 !important;
+}
+
+body.light-theme a:hover {
+    color: #007bff !important;
+}
+
+/* Lua amarela no modo escuro com contorno branco */
+body:not(.light-theme) .theme-toggle i.fa-moon {
+    color: #FFD700 !important;
+    /* dourado */
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff,
+        0 0 6px #FFD700;
+    /* brilho suave */
+}
+
+/* Sol laranja no modo claro */
+body.light-theme .theme-toggle i.fa-sun {
+    color: #FFA500 !important;
+    /* laranja */
+    text-shadow: 0 0 5px #FFD580, 0 0 10px #FFA500, 0 0 15px #FF8C00;
+}
+
+/* Botões com texto branco no modo claro */
+body.light-theme a.btn-primary,
+body.light-theme a.btn-success {
+    color: #fff !important;
+    /* força a cor branca */
+}
+
+/* Se quiser manter o hover mais escuro ou efeito */
+body.light-theme a.btn-primary:hover,
+body.light-theme a.btn-success:hover {
+    color: #fff !important;
+    opacity: 0.9;
+    /* leve efeito de hover */
+}

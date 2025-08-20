@@ -1,0 +1,44 @@
+footer {
+    background-color: var(--ligth-tertiary-color);
+}
+
+.footer__contact span {
+    color: var(--icone-border);
+}
+
+footer .footer__content {
+    text-align: center;
+    padding: 6rem 2rem 1rem;
+    max-width: 47rem;
+
+}
+
+footer .footer__content .footer__contact span {
+    display: block;
+    font-weight: 500;
+}
+
+
+footer .footer__content ul li {
+    display: inline-block;
+}
+
+footer .footer__content ul a {
+    display: inline-block;
+    padding: 1rem;
+    border: 1px solid var(--icone-border);
+    border-radius: 5pt;
+}
+
+footer .footer__content ul a:hover {
+    background-color: var(--icone-border);
+    /* muda fundo */
+    color: white;
+    /* muda cor do ícone/texto */
+    transform: scale(1.1);
+    /* aumenta levemente */
+}
+
+footer .footer__content .footer__copyrigth {
+    font-size: 0.9rem;
+}
