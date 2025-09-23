@@ -125,7 +125,7 @@ $html = <<<HTML
         <ul>
             <li>Diagnóstico e solução de problemas técnicos</li>
             <li>Pensamento lógico e analítico</li>
-            <li>Desenho e estruturação de sistemas</li>
+            <li>Mapeamento de Processos e Sugestão de Melhorias de Usabilidade</li>
             <li>Análise de dados para suporte e decisões</li>
             <li>Comunicação eficaz com usuários e equipes</li>
         </ul>
@@ -173,3 +173,4 @@ HTML;
 $pdf->writeHTML($html, true, false, true, false, '');
 
 $pdf->Output('curriculo_agnaldo.pdf', 'I');
+
