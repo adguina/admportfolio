@@ -16,7 +16,7 @@ $pdf->AddPage();
 $pdf->SetFont('dejavusans', '', 8);
 
 // Imagem redonda
-$imgFile = __DIR__ . '/img/guinass.png';
+$imgFile = __DIR__ . '/img/guina.png';
 if (file_exists($imgFile)) {
     $x = 35;
     $y = 25;
@@ -108,7 +108,7 @@ $html = <<<HTML
 <td width="50%" class="coluna-esquerda">
 <p style="line-height:150pt;">&nbsp;</p>
     <h1><span style="white-space: nowrap;">Agnaldo D Moraes</span></h1>
-    <h2>Analista Suporte</h2>
+    <h2>Analista Sistema T.I</h2>
 
     <h3>Detalhes de Contato</h3>
     <p>✉ adguina@email.com</p>
@@ -123,34 +123,46 @@ $html = <<<HTML
 
     <h3>Habilidades</h3>
         <ul>
-            <li>Diagnóstico e solução de problemas técnicos</li>
-            <li>Pensamento lógico e analítico</li>
-            <li>Mapeamento de Processos e Sugestão de Melhorias de Usabilidade</li>
-            <li>Análise de dados para suporte e decisões</li>
-            <li>Comunicação eficaz com usuários e equipes</li>
+           <li>Suporte a sistemas corporativos: identificação, análise e resolução de problemas técnicos</li>
+                    <li>Raciocínio lógico e analítico para interpretação de dados e tomada de decisões</li>
+                    <li>Mapeamento de processos e proposição de melhorias para otimização da usabilidade</li>
+                    <li>Testes de sistemas e acompanhamento de implantações, garantindo conformidade com requisitos</li>
+                    <li>Treinamento e capacitação de usuários para utilização eficiente das soluções</li>
+                    <li>Comunicação clara e eficaz com usuários e equipes técnicas, facilitando a resolução de problemas</li>
         </ul>
-</td>
+     </td>
 
 <td width="55%" class="small-font" style="padding-left: 10pt;">
     <h3>Resumo</h3>
-    <p class="resumo">Analista de Suporte com sólida experiência em atendimento ao usuário, diagnóstico e resolução de problemas técnicos, manutenção de hardware e software, e administração de sistemas. Hábil na análise de incidentes, configuração de redes e suporte remoto e presencial, sempre priorizando a agilidade e a qualidade no atendimento. Proativo, com forte capacidade de comunicação e foco em soluções eficientes que assegurem a continuidade das operações e a satisfação do cliente.</p>
+    <p class="resumo">Sou um profissional de TI focado em sistemas corporativos, com experiência em suporte
+                    funcional, testes, implantação de sistemas e treinamentos de usuários. Gosto de transformar
+                    problemas em soluções práticas, garantindo que as ferramentas utilizadas no dia a dia funcionem de
+                    forma eficiente e intuitiva.
+                    Tenho perfil proativo, comunicativo e orientado a resultados, sempre buscando melhorar processos,
+                    facilitar a rotina dos usuários e contribuir para o sucesso das operações da empresa.</p>
 
     <h3>Experiência Profissional</h3>
 
     <div class="experience-block">
-        <p><strong>Analista de T.I - Monica Sanches Bolsas e Acessorios Ltda</strong><br>
+        <p><strong>Analista Sistema T.I - Monica Sanches Bolsas e Acessorios Ltda</strong><br>
         <span class="period">2012 - Atual</span></p>
-        <ul>
-            <li>Implantação e configuração de PDV (Ponto de Venda) nas lojas da rede, com treinamento para usuários finais.</li>
-            <li>Suporte ao sistema de gestão GESTOR (CIGAM) e manutenção de estações Windows (7 a 11).</li>
-            <li>Manutenção e configuração de computadores e impressoras térmicas e convencionais.</li>
-            <li>Administração de servidores Linux Debian 12 e Ubuntu Server desenvolvidos internamente.</li>
-            <li>Gerenciamento de servidores de arquivos com Active Directory, VPN e servidores de aplicativos web via Apache2.</li>
-            <li>Desenvolvimento de aplicações web em PHP com bancos de dados PostgreSQL e MySQL.</li>
-            <li>Criação e manutenção de rotinas de backup para sistemas e aplicações.</li>
-        </ul>
+                 <ul>
+                        <li>Implantação e configuração de sistemas de PDV (Ponto de Venda) em lojas da rede, incluindo
+                            treinamento de usuários.</li>
+                        <li>Suporte ao sistema de gestão GESTOR (CIGAM) Retaguarda e Frente de Loja.</li>
+                        <li>Configuração e preparação de computadores para operação funcional de sistemas Gestao de
+                            Vendas, garantindo desempenho e compatibilidade.</li>
+                        <li>Configuração impressoras (térmicas,convencionais e fiscal).</li>
+                        <li>Administração de servidores Linux (Debian 12 e Ubuntu Server) local.
+                        </li>
+                        <li>Gestao de servidores de arquivos com Active Directory, VPNs e servidores web com
+                            Apache2.</li>
+                        <li>Customização e manutenção básica de aplicações web em PHP, com suporte a bancos de dados
+                            PostgreSQL e MySQL.</li>
+                        <li>Criação e manutenção de rotinas de backup para bancos de dados PostgreSQL e MySQL,
+                            garantindo a segurança e integridade das informações.</li>
+                    </ul>
     </div>
-
     <div class="experience-block">
         <p><strong>Analista de Suporte - Neotextil Indústria e Comércio de Tecidos Ltda</strong><br>
         <span class="period">2008 - 2012</span></p>
@@ -162,14 +174,12 @@ $html = <<<HTML
             <li>Apoio na area de PCP.</li>
         </ul>
     </div>
-
     <h3>Referências</h3>
     <p>Disponíveis mediante solicitação</p>
 </td>
 </tr>
 </table>
 HTML;
-
 $pdf->writeHTML($html, true, false, true, false, '');
 
 $pdf->Output('curriculo_agnaldo.pdf', 'I');
